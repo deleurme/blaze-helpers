@@ -1,6 +1,6 @@
 Package.describe({
   name: 'sdeleurme:blaze-helpers',
-  version: '0.1.0',
+  version: '0.1.1',
   summary: 'Just another simple set of helpers for blaze.',
   git: 'git@github.com:deleurme/blaze-helpers.git',
   documentation: 'README.md'
