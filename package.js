@@ -1,16 +1,14 @@
 Package.describe({
   name: 'sdeleurme:blaze-helpers',
   version: '0.1.0',
-  // Brief, one-line summary of the package.
   summary: 'Just another simple set of helpers for blaze.',
-  // URL to the Git repository containing the source code for this package.
-  git: 'git@github.com:sdel/blaze-helpers.git',
-  // By default, Meteor will default to using README.md for documentation.
-  // To avoid submitting documentation, set this field to null.
+  git: 'git@github.com:deleurme/blaze-helpers.git',
   documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
+  api.use(["templating", "underscore"]);
+
   api.versionsFrom('1.1.0.3');
   api.addFiles('blaze-helpers.js', 'client');
 });
@@ -18,5 +16,5 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('tinytest');
   api.use('sdeleurme:blaze-helpers');
-  api.addFiles('blaze-helpers-tests.js');
+  api.addFiles('blaze-helpers-tests.js', 'client');
 });
